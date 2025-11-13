@@ -62,4 +62,5 @@ volumeMounts:
   name: postgres-storage
   mountPath: "/var/lib/postgresql/data"
 
-logfile: "/tmp/limit-order-book-log"
+# logfile: "/tmp/limit-order-book-log"
+logfile: ""
