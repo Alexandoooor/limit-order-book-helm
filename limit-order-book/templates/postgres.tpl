@@ -15,10 +15,11 @@ metadata:
   labels:
     app: postgres
 data:
-  ps_db: local
-  ps_user: postgres
-  ps_host: postgres
-  ps_port: "5432"
+  ps_db: {{ .Values.postgres.db }}
+  ps_user: {{ .Values.postgres.user }}
+  ps_host: {{ .Values.postgres.host }}
+  ps_port: {{ .Values.postgres.port }}
+
 ---
 
 apiVersion: v1

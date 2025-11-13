@@ -21,6 +21,12 @@ imagePullSecrets: [amagnu-docker-secret]
 
 containerPort: 3000
 
+postgres:
+  db: local
+  user: postgres
+  host: limit-order-book-postgres
+  port: 5432
+
 # This is to override the chart name.
 nameOverride: ""
 fullnameOverride: ""
