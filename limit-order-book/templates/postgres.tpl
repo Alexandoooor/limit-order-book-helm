@@ -2,14 +2,14 @@
 apiVersion: bitnami.com/v1alpha1
 kind: SealedSecret
 metadata:
-  name: {{ .Chart.Name }}-postgres-secret
+  name: limit-order-book-postgres-secret
   namespace: default
 spec:
   encryptedData:
-    ps_password: AgBfMQlUxIAcVka+sEmsCB/L73hyPL4kDv+iyCSTC+YEbqrnj7v3ZXj3ekf3a3o9H01+4Xbg7YJCXyGc9XCA00PUGmeoJfV/8XYpBt+othq2M3gHpgqkSSogvVDn19TJw/aVB9q5m0D2BmiFWkEcxJtHVYXd8vd7Nb6sjPajlKKBCYqy8ZCZkSoIW+Nhhd821rl8SCLDMsM63iCvjdZsoSoD2rrJ3sne9757X/lqCg616anNehHos1bwAXhnoj7kcVAwBkN06zT+AnkWwRuH1uOSR75kfG/wXAYS8g76RrF8G1ilI4521JQuo58TGYh810ugxyXnuUXsO904H+vQSDLEbKjrOzDWzIPNj4Q1PkCqgRgdNybN5dm06bROhIrUyVPQO0M/cOfPSTMPVNZCbI8EFc0oON3d71CIRBEMKRklSvplRDDTc/AWa/L6iQwqTStfCjpTsV7BgsyUX383iEjhSCDBZDyWUpg253HqtIwKzklbStsYigB7FMnefr49JErNE7AQwdzOdMDgGUvI9v5quuytORtzeUqq2wiBtmV0sVP6sg60vmAVQG2jL8/DBlsSD1T0dZWTYs+Q3tAugAAjw6VFiZPDFldWWKMzjlzKJwFV7tFyft4m3x8Wi/zwmlyd7vmHvaGp2gp8B9mN5vt+PJJyvgNKnRMjVEFxCcvcBCQAjL7JKWzz8r6+9diXIzXlagZ0mgTeh/1z9D3Vi20Qt6BKScNK
+    ps_password: AgApwQtW/VqWx7R0F026a73u+OmtgAQ6PTjdX9oHTLRu9/HY23XzDulLR359BTXNLhsbujKYOkgd43CpvCfKC6IyIn/CYwrdReqNabAQ0iU10BiPa9JOYOgjcZ/53SAZOPPKPQVwBtrUQap/kbKMH7lr1K0qHHdeUzQfmVm9NoGjCahCniF8MNFwRjaeLV79HIQfIxy0dYUmivmWZfkb2E5Fkfz7NGNfTx0dlqqaVXv+0mOUcOdFdBmBeFG1Wr0xAV3pLfzMoohawqjLKvALRaXQVXlD6iUw1X2OYSfNwGZSFrL1c+tLSDki6IserKjgs5kmT2+MpQk+vIqGG1PBV1L4y9UC/i0jJTRTbzscjeLcsbX4tsb8VvVe7+XMLJq5ncQvhtwMYoDke1H0QQwXu3WoVcfPVNJElXSm+ihvvnUUgmnIH/4v7YTCPBqeOKdD/RX9kF4a+lcfg59RqNIfVjrz6J62maOyeI+H5dL3OFXxz37OSSBWhFP58ubRsdu0PHOmg1sXlS0NUA+HKcff9lxyBGXSL+IctBbCGkD8uPDVHU/T+SX6twj43q0gxkAKR8JzAXZ/77VMVuav1cIWLHApmksFFLDaY2ZOjvAt5sS4ekAm10wnGtNlKbzrgvrLd4puAb4yWfrHBmmnw5jurgsDiZ7HcX5NpUSj9IAc0Dyv+ktFImwqo2RaRQ6iclxNfwgOUKVzl4G49YbdhMXEg5hNaDAYd+Sr
   template:
     metadata:
-      name: {{ .Chart.Name }}-postgres-secret
+      name: limit-order-book-postgres-secret
       namespace: default
 ---
 apiVersion: v1
