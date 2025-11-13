@@ -18,7 +18,7 @@ data:
   ps_db: {{ .Values.postgres.db }}
   ps_user: {{ .Values.postgres.user }}
   ps_host: {{ .Values.postgres.host }}
-  ps_port: {{ .Values.postgres.port }}
+  ps_port: "{{ .Values.postgres.port }}"
 
 ---
 
