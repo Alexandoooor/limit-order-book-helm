@@ -10,9 +10,8 @@ spec:
   template:
     metadata:
       name: {{ .Chart.Name }}-postgres-secret
-      namespace: argocd
+      namespace: default
 ---
-
 apiVersion: v1
 kind: ConfigMap
 metadata:
